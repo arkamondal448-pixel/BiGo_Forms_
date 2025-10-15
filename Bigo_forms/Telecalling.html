@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calling Form</title>
+  <link rel="stylesheet" href="Telecalling.css" />
+</head>
+<body>
+  <div class="form-container">
+    <h2>Telecaller</h2>
+
+    <form id="callingForm">
+      <label for="callType">Select Call Type:</label>
+      <select id="callType" name="callType" required>
+        <option value="">-- Select --</option>
+        <option value="client">Client</option>
+        <option value="rider">Rider</option>
+        <option value="rental">Rental</option>
+      </select>
+
+      <!-- Client Calling Fields -->
+      <div id="clientFields" class="hidden">
+        <label>Store Name:</label>
+        <input type="text" id="storeName" name="storeName" placeholder="Enter store name" />
+        <label>Number:</label>
+        <input type="text" id="clientNumber" name="clientNumber" placeholder="Enter number" />
+        <label>Remarks:</label>
+        <textarea id="clientRemarks" name="clientRemarks" placeholder="Enter remarks"></textarea>
+      </div>
+
+      <!-- Rider Calling Fields -->
+      <div id="riderFields" class="hidden">
+        <label>Full Name:</label>
+        <input type="text" id="riderName" name="riderName" placeholder="Enter full name" />
+        <label>Number:</label>
+        <input type="text" id="riderNumber" name="riderNumber" placeholder="Enter number" />
+        <label>Remarks:</label>
+        <textarea id="riderRemarks" name="riderRemarks" placeholder="Enter remarks"></textarea>
+      </div>
+
+      <!-- Rental Calling Fields -->
+      <div id="rentalFields" class="hidden">
+        <label>Full Name:</label>
+        <input type="text" id="rentalName" name="rentalName" placeholder="Enter full name" />
+        <label>Number:</label>
+        <input type="text" id="rentalNumber" name="rentalNumber" placeholder="Enter number" />
+        <label>Remarks:</label>
+        <textarea id="rentalRemarks" name="rentalRemarks" placeholder="Enter remarks"></textarea>
+      </div>
+
+      <button type="submit">Submit</button>
+      <p id="output"></p>
+    </form>
+  </div>
+
+  <script src="Telecalling.js"></script>
+</body>
+</html>

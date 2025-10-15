@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Training Follow-up Form</title>
+  <link rel="stylesheet" href="training.css" />
+</head>
+<body>
+  <div class="form-container">
+    <h2>Training Follow-up</h2>
+
+    <!-- Step 1: Lookup -->
+    <form id="phoneCheckForm">
+      <div class="form-group">
+        <label>Enter Phone Number</label>
+        <input type="tel" id="phoneLookup" required />
+        <button type="submit" class="btn-submit">Proceed</button>
+      </div>
+    </form>
+
+    <!-- Step 2: Follow-up form -->
+    <form id="followupForm" class="hidden">
+      <h3>Follow-up Details</h3>
+
+      <div class="form-group"><label>Full Name</label><input type="text" id="f_visitorName" readonly></div>
+      <div class="form-group"><label>Email</label><input type="email" id="f_email" readonly></div>
+      <div class="form-group"><label>Alternative Phone</label><input type="text" id="f_altNumber" readonly></div>
+      <div class="form-group"><label>Area</label><input type="text" id="f_area" readonly></div>
+      <div class="form-group"><label>Reference</label><input type="text" id="f_reference" readonly></div>
+      <div class="form-group"><label>Training Type</label><input type="text" id="f_trainingType" readonly></div>
+      <div class="form-group"><label>Previous Job</label><input type="text" id="f_previousJob" readonly></div>
+
+      <div class="form-group"><label>Interview By</label><input type="text" id="interviewBy" required></div>
+      <div class="form-group"><label>Training By</label><input type="text" id="trainingBy" required></div>
+      <div class="form-group"><label>Training Status</label>
+        <select id="trainingStatus" required>
+          <option value="">-- Select Status --</option>
+          <option>Trained</option>
+          <option>Not Trained</option>
+        </select>
+      </div>
+      <div class="form-group"><label>Trained By</label><input type="text" id="trainedBy" required></div>
+      <div class="form-group"><label>Selection</label>
+        <select id="selection" required>
+          <option value="">-- Select --</option>
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+      </div>
+      <div class="form-group"><label>Final Remark</label><textarea id="finalRemark" rows="3" required></textarea></div>
+
+      <button type="submit" class="btn-submit">Submit Follow-up</button>
+    </form>
+  </div>
+
+  <script src="followup2.js"></script>
+</body>
+</html>
