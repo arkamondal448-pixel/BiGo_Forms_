@@ -135,3 +135,4 @@ function sendData(base64Data, filename) {
     .catch(err => { status.innerText = "❌ Error: " + err.message; });
 }
 
+
