@@ -37,7 +37,7 @@ window.addEventListener("DOMContentLoaded", () => {
         form.currentAddress.value = r["Current Address"] || "";
         
         // Make fetched fields readonly
-        ["name", "email", "phone", "fatherName", "aadharAddress", "residenceType", "dob", "currentAddress"]
+        ["name", "email", "phone","currentAddress"]
           .forEach(id => document.getElementById(id).readOnly = true);
 
         status.innerText = "✅ Candidate details loaded from Main sheet.";
@@ -143,3 +143,4 @@ form.addEventListener("submit", e => {
       submitBtn.innerText = "Submit";
     });
 });
+
