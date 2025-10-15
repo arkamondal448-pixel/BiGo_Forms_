@@ -81,4 +81,5 @@ document.addEventListener("DOMContentLoaded", () => {
         status.innerText = "❌ Error submitting follow-up data.";
       });
   });
+
 });
